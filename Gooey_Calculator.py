@@ -11,6 +11,11 @@ enter1 = Entry(root)
 num2 = Label(root, text = 'Enter second number:', font = ('Serif', 12))
 enter2 = Entry(root)
 
+# operator buttons:
+add = Button(root, text = 'Add', width = 10, command = add)
+sub = Button(root, text = 'Sub', width = 10, command = sub)
+mul = Button(root, text = 'Mul', width = 10, command = mul)
+div = Button(root, text = 'Div', width = 10, command = div)
 
 
 # Grid locations:
