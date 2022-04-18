@@ -4,12 +4,35 @@
 from tkinter import *
 import tkinter.font as font
 
-# Number Entry with labels
 root = Tk()
+root.title('Calculator')
+
+# Number Entry with labels
 num1 = Label(root, text = 'Enter first number:', font = ('Serif', 12))
 enter1 = Entry(root)
 num2 = Label(root, text = 'Enter second number:', font = ('Serif', 12))
 enter2 = Entry(root)
+
+# Event handler functions:
+def add():
+    x = int(enter1.get())
+    y = int(enter2.get())
+    result['text'] = x + y
+    
+def sub():
+    x = int(enter1.get())
+    y = int(enter2.get())
+    result['text'] = x - y
+    
+def mul():
+    x = int(enter1.get())
+    y = int(enter2.get())
+    result['text'] = x * y
+    
+def div():
+    x = int(enter1.get())
+    y = int(enter2.get())
+    result['text'] = x / y
 
 # operator buttons:
 add = Button(root, text = 'Add', width = 10, command = add)
@@ -17,7 +40,9 @@ sub = Button(root, text = 'Sub', width = 10, command = sub)
 mul = Button(root, text = 'Mul', width = 10, command = mul)
 div = Button(root, text = 'Div', width = 10, command = div)
 
+
 result = Label(root)
+
 
 
 # Grid locations:
