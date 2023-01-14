@@ -10,7 +10,7 @@ from PIL import ImageTk, Image
 
 # enroll event function
 def enroll():
-    output['text'] = 'Enrolled Successfully'
+    output['text'] = 'Please, Do Not Hit Enter Again'
 
 # create app window
 root = Tk()  # Create Tk() class object 
@@ -21,8 +21,8 @@ root.geometry('600x700') # define window size
 font = font.Font(family = 'Serif', size = 18, weight = 'bold')
 
 # Create widget objects: 
-course = Label(root, text = 'Programming Hero Course', bg = 'red', fg = 'white', font = font)
-enroll = Button(root, text = 'Enroll Now',fg = 'blue', bg = 'yellow', command = enroll)
+course = Label(root, text = 'Do Not Enter Any Data', bg = 'red', fg = 'white', font = font)
+enroll = Button(root, text = 'Enter',fg = 'blue', bg = 'yellow', command = enroll)
 lbl = Label(root, text = 'Name')
 data = Entry(root)
 output = Label()
